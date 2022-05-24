@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        retry(count: 3)
         echo 'build complete'
+        retry(count: 3)
       }
     }
 
